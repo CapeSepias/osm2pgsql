@@ -290,7 +290,7 @@ jobs:
           path: |
             C:/postgis.zip
           key: postgis-cache
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v4.1.7
         with:
           name: osm2pgsql-win64
       - uses: ./.github/actions/win-postgres
